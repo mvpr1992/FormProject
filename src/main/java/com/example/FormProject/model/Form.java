@@ -7,19 +7,29 @@ public class Form {
 	private String firstName;
 	private String lastName;
 	private String address;
-	
+	//Adding the mobile as part of release 2
+	private String mobile;
 	
 	public Form() {
 	
 	} 
     
-    public Form(int id, String firstName,String lastName,String address) {
+    public Form(int id, String firstName,String lastName,String address, String mobile) {
        
     	this.id = id;
     	this.firstName = firstName;
     	this.lastName = lastName;
     	this.address = address;
+    	this.mobile = mobile;
     }
+    
+    public String getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
 
 	public int getId() {
 		return id;
